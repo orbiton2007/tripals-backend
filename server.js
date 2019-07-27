@@ -11,6 +11,7 @@ const TripRoutes = require('./api/trip/TripRoutes')
 const AuthRoutes = require('./api/auth/AuthRoutes')
 const UserRoutes = require('./api/user/UserRoutes')
 const ChatRoutes = require('./api/chat/ChatRoutes')
+const NotificationsRoutes = require('./api/notification/NotificationsRoutes')
 
 const multer = require('multer')
 const cloudinary = require('cloudinary').v2;
@@ -41,6 +42,7 @@ app.use('/api/trip', TripRoutes)
 app.use('/api/auth', AuthRoutes)
 app.use('/api/user', UserRoutes)
 app.use('/api/chat', ChatRoutes)
+app.use('/api/room', NotificationsRoutes)
 
 
 app.post('/upload/cloudinary', upload.single('imgUpload'), async (req, res) => {

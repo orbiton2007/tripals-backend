@@ -1,9 +1,9 @@
 const socketIO = require('socket.io');
 const ChatService = require('../api/chat/ChatService')
 const UserService = require('../api/user/UserService')
+const NotificationsService = require('../api/notification/NotificationsService')
 
 var io;
-var rooms = []
 
 function setup(http) {
     io = socketIO(http);
@@ -33,18 +33,13 @@ function setup(http) {
             socket.broadcast.to(chat._id).emit('chat typing', '');
         });
         socket.on('create room', (user) => {
-            if (user.loggedInUser) {
-                // var room = user.loggedInUser._id;
-                // rooms.push(room)
-                socket.join(user.loggedInUser._id)
-            }
+            if (user) socket.join(user.notifications.roomId)
         });
-        socket.on('join trip', async ({ user, trip, owner }) => {
-            // var room = rooms.find(room => room === owner._id)
-            var msg = `${user.firstName} ${user.lastName} send you request to join the trip ${trip.destination}`;
-            // owner.notifications.push(msg)
-            // await UserService.update(owner)
-            io.to(owner._id).emit('new request', msg)
+        socket.on('join trip', async ({ user, trip, room }) => {
+            var msg = `${user.firstName} ${user.lastName} send you request to join the trip to ${trip.destination}`;
+            room.requests.unshift(msg)
+            await NotificationsService.update(room)
+            io.to(room._id).emit('new request', msg, trip, user)
         });
     });
 }
