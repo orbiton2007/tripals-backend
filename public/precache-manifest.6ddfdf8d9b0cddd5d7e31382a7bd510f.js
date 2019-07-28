@@ -8,12 +8,12 @@ self.__precacheManifest = [
     "url": "/robots.txt"
   },
   {
-    "revision": "c6cdfded4630ba6d9a2dceb70aa4fe0f",
-    "url": "/fonts/Roboto-Light.c6cdfded.ttf"
+    "revision": "7c18188784f21915f42a5b3bc9d91e20",
+    "url": "/fonts/Roboto-Bold.7c181887.ttf"
   },
   {
-    "revision": "fdf7e1a1171404b17da7",
-    "url": "/css/chunk-vendors.c89d221a.css"
+    "revision": "2e9b5ea416149b22aed2",
+    "url": "/css/chunk-vendors.104d255a.css"
   },
   {
     "revision": "6b68cc1bac6e9e63e6e32f4bd64ded5e",
@@ -32,12 +32,12 @@ self.__precacheManifest = [
     "url": "/fonts/Nucleo.62d6bcd6.eot"
   },
   {
-    "revision": "1544b92f36929ad7da3f19ca4f4700cc",
-    "url": "/fonts/Nucleo.1544b92f.ttf"
-  },
-  {
     "revision": "32e55d817dfa4c880c49ff3b9070e5a7",
     "url": "/fonts/Nucleo.32e55d81.woff"
+  },
+  {
+    "revision": "1544b92f36929ad7da3f19ca4f4700cc",
+    "url": "/fonts/Nucleo.1544b92f.ttf"
   },
   {
     "revision": "6bb5009f2097e13c3fea301d8dc64dec",
@@ -52,20 +52,20 @@ self.__precacheManifest = [
     "url": "/img/ran1.86e37d70.png"
   },
   {
-    "revision": "daadaaa80dc7ae7001e5",
-    "url": "/js/app.aaf7e54f.js"
+    "revision": "3b890da824536378afbb",
+    "url": "/js/app.0fa81fcd.js"
   },
   {
-    "revision": "fdf7e1a1171404b17da7",
-    "url": "/js/chunk-vendors.86ed17d7.js"
+    "revision": "2e9b5ea416149b22aed2",
+    "url": "/js/chunk-vendors.c03019d7.js"
+  },
+  {
+    "revision": "c6cdfded4630ba6d9a2dceb70aa4fe0f",
+    "url": "/fonts/Roboto-Light.c6cdfded.ttf"
   },
   {
     "revision": "d52f011be65b281ba8ca1c3f689cf133",
     "url": "/fonts/Roboto-Medium.d52f011b.ttf"
-  },
-  {
-    "revision": "7c18188784f21915f42a5b3bc9d91e20",
-    "url": "/fonts/Roboto-Bold.7c181887.ttf"
   },
   {
     "revision": "18d44f79b3979ec168862093208c6d7d",
@@ -84,27 +84,27 @@ self.__precacheManifest = [
     "url": "/fonts/Raleway-Light.353ea0a0.ttf"
   },
   {
-    "revision": "818653e129689a969c72e0724f3a5169",
-    "url": "/fonts/Raleway-Medium.818653e1.ttf"
+    "revision": "2f99a85426a45e0c7f8707aae53af803",
+    "url": "/fonts/Raleway-Bold.2f99a854.ttf"
   },
   {
     "revision": "6ec58d1ea836b7ef69f94ea6770972a3",
     "url": "/fonts/Raleway-SemiBold.6ec58d1e.ttf"
   },
   {
-    "revision": "2f99a85426a45e0c7f8707aae53af803",
-    "url": "/fonts/Raleway-Bold.2f99a854.ttf"
+    "revision": "818653e129689a969c72e0724f3a5169",
+    "url": "/fonts/Raleway-Medium.818653e1.ttf"
   },
   {
     "revision": "9406d0ab606cf8cb91c41b65556bd836",
     "url": "/fonts/Lobster-Regular.9406d0ab.ttf"
   },
   {
-    "revision": "53eaab10076eb8b196c22cce15a4aeab",
+    "revision": "94be8566e0166dc3d20338411f1aebf6",
     "url": "/index.html"
   },
   {
-    "revision": "daadaaa80dc7ae7001e5",
-    "url": "/css/app.a35bc1cc.css"
+    "revision": "3b890da824536378afbb",
+    "url": "/css/app.58806329.css"
   }
 ];
