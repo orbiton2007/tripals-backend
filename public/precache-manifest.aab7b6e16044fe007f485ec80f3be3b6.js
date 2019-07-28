@@ -8,8 +8,8 @@ self.__precacheManifest = [
     "url": "/robots.txt"
   },
   {
-    "revision": "7c18188784f21915f42a5b3bc9d91e20",
-    "url": "/fonts/Roboto-Bold.7c181887.ttf"
+    "revision": "c6cdfded4630ba6d9a2dceb70aa4fe0f",
+    "url": "/fonts/Roboto-Light.c6cdfded.ttf"
   },
   {
     "revision": "2e9b5ea416149b22aed2",
@@ -52,59 +52,59 @@ self.__precacheManifest = [
     "url": "/img/ran1.86e37d70.png"
   },
   {
-    "revision": "3b890da824536378afbb",
-    "url": "/js/app.0fa81fcd.js"
+    "revision": "a25428a8dbce09e04cb3",
+    "url": "/js/app.d9689144.js"
   },
   {
     "revision": "2e9b5ea416149b22aed2",
     "url": "/js/chunk-vendors.c03019d7.js"
   },
   {
-    "revision": "c6cdfded4630ba6d9a2dceb70aa4fe0f",
-    "url": "/fonts/Roboto-Light.c6cdfded.ttf"
+    "revision": "18d44f79b3979ec168862093208c6d7d",
+    "url": "/fonts/Roboto-Regular.18d44f79.ttf"
+  },
+  {
+    "revision": "7c18188784f21915f42a5b3bc9d91e20",
+    "url": "/fonts/Roboto-Bold.7c181887.ttf"
   },
   {
     "revision": "d52f011be65b281ba8ca1c3f689cf133",
     "url": "/fonts/Roboto-Medium.d52f011b.ttf"
   },
   {
-    "revision": "18d44f79b3979ec168862093208c6d7d",
-    "url": "/fonts/Roboto-Regular.18d44f79.ttf"
-  },
-  {
     "revision": "84abe14c9756256a4b91300ba3e4ec62",
     "url": "/fonts/Raleway-Regular.84abe14c.ttf"
-  },
-  {
-    "revision": "9da6e8b1803fec548ee0720f620f93f5",
-    "url": "/fonts/Roboto-RegularItalic.9da6e8b1.ttf"
   },
   {
     "revision": "353ea0a0ae707df315407d72fa507e2f",
     "url": "/fonts/Raleway-Light.353ea0a0.ttf"
   },
   {
-    "revision": "2f99a85426a45e0c7f8707aae53af803",
-    "url": "/fonts/Raleway-Bold.2f99a854.ttf"
+    "revision": "818653e129689a969c72e0724f3a5169",
+    "url": "/fonts/Raleway-Medium.818653e1.ttf"
+  },
+  {
+    "revision": "9da6e8b1803fec548ee0720f620f93f5",
+    "url": "/fonts/Roboto-RegularItalic.9da6e8b1.ttf"
   },
   {
     "revision": "6ec58d1ea836b7ef69f94ea6770972a3",
     "url": "/fonts/Raleway-SemiBold.6ec58d1e.ttf"
   },
   {
-    "revision": "818653e129689a969c72e0724f3a5169",
-    "url": "/fonts/Raleway-Medium.818653e1.ttf"
+    "revision": "2f99a85426a45e0c7f8707aae53af803",
+    "url": "/fonts/Raleway-Bold.2f99a854.ttf"
   },
   {
     "revision": "9406d0ab606cf8cb91c41b65556bd836",
     "url": "/fonts/Lobster-Regular.9406d0ab.ttf"
   },
   {
-    "revision": "94be8566e0166dc3d20338411f1aebf6",
+    "revision": "6149563992d0535ed5edbb982e8a0592",
     "url": "/index.html"
   },
   {
-    "revision": "3b890da824536378afbb",
-    "url": "/css/app.58806329.css"
+    "revision": "a25428a8dbce09e04cb3",
+    "url": "/css/app.aad0864e.css"
   }
 ];
