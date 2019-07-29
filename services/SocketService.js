@@ -40,7 +40,20 @@ function setup(http) {
             room.requests.unshift(msg)
             await NotificationsService.update(room)
             io.to(room._id).emit('new request', msg, trip, user)
+            socket.broadcast.emit('update trip', trip)
         });
+        socket.on('leave trip', (trip) => {
+            socket.broadcast.emit('update trip',trip)
+        })
+        socket.on('like trip', (trip) => {
+            socket.broadcast.emit('update trip',trip)
+        })
+        socket.on('approve user', (trip) => {
+            socket.broadcast.emit('update trip',trip)
+        })
+        socket.on('reject user', (trip) => {
+            socket.broadcast.emit('update trip', trip)
+        })
     });
 }
 
