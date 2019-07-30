@@ -14,6 +14,12 @@ function setup(http) {
             // console.log('user disconnected');
 
         });
+        socket.on('trip details', async (tripId) => {
+            socket.join(tripId)
+        });
+        socket.on('disconnect trip', async (tripId) => {
+            socket.leave(tripId)
+        });
         socket.on('chatJoin', async ({ chat, user }) => {
             if (user && chat) {
                 socket.join(chat._id)
@@ -36,23 +42,23 @@ function setup(http) {
             if (user) socket.join(user.notifications.roomId)
         });
         socket.on('join trip', async ({ user, trip, room }) => {
-            var msg = `${user.firstName} ${user.lastName} send you request to join the trip to ${trip.destination}`;
+            var msg = `Request from ${user.firstName} ${user.lastName} about the trip to ${trip.destination}`;
             room.requests.unshift(msg)
             await NotificationsService.update(room)
             io.to(room._id).emit('new request', msg, trip, user)
-            socket.broadcast.emit('update trip', trip)
+            socket.broadcast.to(trip._id).emit('update trip', trip)
         });
         socket.on('leave trip', (trip) => {
-            socket.broadcast.emit('update trip',trip)
+            socket.broadcast.to(trip._id).emit('update trip', trip)
         })
         socket.on('like trip', (trip) => {
-            socket.broadcast.emit('update trip',trip)
+            socket.broadcast.to(trip._id).emit('update trip', trip)
         })
         socket.on('approve user', (trip) => {
-            socket.broadcast.emit('update trip',trip)
+            socket.broadcast.to(trip._id).emit('update trip', trip)
         })
         socket.on('reject user', (trip) => {
-            socket.broadcast.emit('update trip', trip)
+            socket.broadcast.to(trip._id).emit('update trip', trip)
         })
     });
 }
